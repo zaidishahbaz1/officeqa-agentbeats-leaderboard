@@ -5,7 +5,7 @@ env = { LOG_LEVEL = "INFO" }
 [[participants]]
 agentbeats_id = ""
 name = "officeqa_agent"
-env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
+env = { GOOGLE_API_KEY = "${GOOGLE_API_KEY}", LLM_PROVIDER = "gemini", GEMINI_MODEL = "gemini-3-flash-preview", ENABLE_WEB_SEARCH = "true", REASONING_EFFORT = "medium" }
 
 [config]
 dataset_url = "https://raw.githubusercontent.com/databricks/officeqa/6aa8c32/officeqa.csv"
