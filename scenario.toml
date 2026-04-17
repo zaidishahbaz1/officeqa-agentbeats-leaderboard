@@ -3,9 +3,9 @@ agentbeats_id = "019ca14f-cbd5-7a71-9b2b-d43db92a09e1"
 env = { LOG_LEVEL = "INFO" }
 
 [[participants]]
-agentbeats_id = ""
+agentbeats_id = "019d8563-f2d8-7371-8c11-fb5d6956c011"
 name = "officeqa_agent"
-env = { GOOGLE_API_KEY = "${GOOGLE_API_KEY}", LLM_PROVIDER = "gemini", GEMINI_MODEL = "gemini-3-flash-preview", ENABLE_WEB_SEARCH = "true", REASONING_EFFORT = "medium" }
+env = { OPENAI_API_KEY = "${OPENAI_API_KEY}", OPENAI_MODEL = "gpt-5.4-mini", REASONING_EFFORT = "medium" }
 
 [config]
 dataset_url = "https://raw.githubusercontent.com/databricks/officeqa/6aa8c32/officeqa.csv"
@@ -13,3 +13,4 @@ corpus_url = "https://github.com/databricks/officeqa/tree/6aa8c32/treasury_bulle
 num_questions = 246
 difficulty = "all"
 tolerance = 0.0
+max_concurrent = 1
